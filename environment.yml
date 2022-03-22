@@ -1,0 +1,19 @@
+name: workshop-env
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.7
+  - deeplc
+  - pyteomics
+  - spectrum_utils
+  - matplotlib
+  - seaborn
+  - plotly
+  - numpy
+  - pandas
+  - scipy
+  - pip:
+    - ms2rescore
+    - ms2pip
