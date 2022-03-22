@@ -1,0 +1,9 @@
+deeplc
+pyteomics
+spectrum_utils
+matplotlib
+seaborn
+plotly
+numpy
+pandas
+scipy
