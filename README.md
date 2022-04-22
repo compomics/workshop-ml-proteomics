@@ -11,7 +11,7 @@ notebook:
 
 | Notebook | Topic | Colab |
 | - | - | - |
-| `1. MS2PIP and DeepLC.ipynb` | Introduction into peptide LC-MS prediction |  <a href="https://colab.research.google.com/github/compomics/workshop-ml-proteomics/blob/EPIC-XS-workshop/1.%20MS2PIP%20and%20DeepLC.ipynbb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a> |
+| `1. MS2PIP and DeepLC.ipynb` | Introduction into peptide LC-MS prediction |  <a href="https://colab.research.google.com/github/compomics/workshop-ml-proteomics/blob/EPIC-XS-workshop/1.%20MS2PIP%20and%20DeepLC.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a> |
 | `2. ionbot.ipynb` | Using the [ionbot.cloud](https://ionbot.cloud) search engine and analyizing its results | <a href="https://colab.research.google.com/github/compomics/workshop-ml-proteomics/blob/EPIC-XS-workshop/2.%20ionbot.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a> |
 | `3. More MS2PIP and DeepLC.ipynb` | Optional deep-dive into MS²PIP and DeepLC | <a href="https://colab.research.google.com/github/compomics/workshop-ml-proteomics/blob/EPIC-XS-workshop/3.%20More%20MS2PIP%20and%20DeepLC.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a> |
 
