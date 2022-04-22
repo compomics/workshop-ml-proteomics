@@ -1,9 +1,36 @@
-# Workshop: Tackling identification ambiguity in immunopeptidomics and in open modification searches with machine learning
+# ionbot workshop
 
-[![Launch Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/compomics/workshop-ml-proteomics/HEAD)
+In this workshop, you will learn how ionbot leverages MS²PIP and DeepLC predictions of peptide LC-MS behavior to sensitively identify (modified) peptides. First, you will learn how the machine learning tools MS²PIP and DeepLC accurately predict peptide fragmentation spectra and chromatography retention time. Then, you will see how to process proteomics data
+with the [ionbot.cloud](https://ionbot.cloud) search engine. Finally, you will look into the open-modification search results of ionbot and see how predicted information can help to drastically reduce ambiguity between peptidoforms.
 
-In this workshop, you will learn how to predict LC-MS behavior of peptides and how these predictions can be leveraged to identify (modified) peptides. First, you will learn how to use the machine learning tools MS²PIP and DeepLC to accurately predict peptide fragmentation spectra and chromatography retention time. Tips, tricks, and some specific caveats will be shown. Then, you will see how these tools can be integrated into the identification process through rescoring with MS²Rescore. You will apply MS²Rescore to an immunopeptidomics dataset, where traditional identification workflows often fall short. Next, we will look into the open-modification search results of the fully data-driven search engine ionbot and see how predicted information can help to drastically reduce ambiguity between peptidoforms. Open questions and challenges to the field will be discussed.
 
-Throughout the workshop, we will use interactive Jupyter notebooks. While no coding skills are required, participants with programming experience will be able to take a look behind the veil of the tutorial-style notebooks and see how our tools can be integrated in custom bioinformatics workflows.
+## Overview
 
-Click on the `Launch Binder` button above to start the tutorial in your browser.
+The workshop exists out of three parts, each with an interactive Jupyter
+notebook:
+
+| Notebook | Topic | Colab |
+| - | - | - |
+| `1. MS2PIP and DeepLC.ipynb` | Introduction into peptide LC-MS prediction |  <a href="https://colab.research.google.com/github/compomics/workshop-ml-proteomics/blob/EPIC-XS-workshop/1.%20MS2PIP%20and%20DeepLC.ipynbb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a> |
+| `2. ionbot.ipynb` | Using the [ionbot.cloud](https://ionbot.cloud) search engine and analyizing its results | <a href="https://colab.research.google.com/github/compomics/workshop-ml-proteomics/blob/EPIC-XS-workshop/2.%20ionbot.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a> |
+
+Optional:
+| Notebook | Topic | Colab |
+| - | - | - |
+| `3. More MS2PIP and DeepLC.ipynb` | Optional deep-dive into MS²PIP and DeepLC | <a href="https://colab.research.google.com/github/compomics/workshop-ml-proteomics/blob/EPIC-XS-workshop/3.%20More%20MS2PIP%20and%20DeepLC.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a> |
+
+## Getting started
+
+If you are used to working with Jupyter notebooks, you can download or clone
+the repository and work locally. Otherwise, the easiest option to get started
+is by using Google Colab:
+
+1. If still required, sign into Google at `https://myaccount.google.com/`
+2. Click the "Open in Colab" for the notebook you want to open, and get started!
+
+### Locally
+
+Use the environment.yml file to install the conda environment and start Jupyter.
+
+
+<a href="https://colab.research.google.com/github/compomics/workshop-ml-proteomics/blob/EPIC-XS-workshop/1.%20MS²PIP%20spectrum%20prediction.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>

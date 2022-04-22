@@ -30,13 +30,15 @@ def get_usi_spectrum(usi, **spectrum_utils_kwargs):
     return spectrum
 
 
-def get_theoretical_spectrum(peptide, modifications, charge, b_ion_weight=1.0, ms2pip_instance=None):
+def get_theoretical_spectrum(peptide, modifications, b_ion_weight=1.0, ms2pip_instance=None):
     if not ms2pip_instance:
         ms2pip = SinglePrediction()
     else:
         ms2pip = ms2pip_instance
 
-    mz, _, annotation = ms2pip.predict(peptide, modifications, charge)
+    charge = 2  # Does not really matter here
+
+    mz, _, annotation = ms2pip.predict(peptide, modifications, charge, model="HCD2019")
     intensity = [b_ion_weight if ann[0] == "b" else 1.0 for ann in annotation]
 
     identifier = f"{peptide}/{charge}/{modifications}"
@@ -57,14 +59,14 @@ def get_theoretical_spectrum(peptide, modifications, charge, b_ion_weight=1.0, m
     return spectrum
 
 
-def get_predicted_spectrum(peptide, modifications, charge, model="HCD2021", ms2pip_instance=None):
+def get_predicted_spectrum(peptide, modifications, charge, model="HCD2019", ms2pip_instance=None):
     if not ms2pip_instance:
         ms2pip = SinglePrediction()
     else:
         ms2pip = ms2pip_instance
-        
+
     mz, intensity, annotation = ms2pip.predict(peptide, modifications, charge, model=model)
-    
+
     identifier = f"{peptide}/{charge}/{modifications}"
     precursor_mz = ms2pip.mod_info.calc_precursor_mz(peptide, modifications, charge)
     mod_dict = ms2pip._modifications_to_dict(modifications)
